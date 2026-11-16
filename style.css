@@ -1,0 +1,188 @@
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* CABEÇALHO */
+
+header {
+    background: linear-gradient(135deg, #142b52, #28569b);
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 17px;
+}
+
+/* MENU */
+
+nav {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+nav a {
+    text-decoration: none;
+    color: #173b70;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d69b35;
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+main {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    padding: 35px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+}
+
+section h2 {
+    color: #173b70;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+/* BOAS-VINDAS */
+
+.boas-vindas {
+    text-align: center;
+    background: #e8eef8;
+}
+
+.boas-vindas h2 {
+    font-size: 32px;
+}
+
+/* CARTÕES DOS CULTOS */
+
+.culto {
+    background-color: #f4f6fa;
+    border-left: 5px solid #d69b35;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.culto:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.08);
+}
+
+.culto h3 {
+    color: #173b70;
+    margin-bottom: 5px;
+}
+
+/* RODAPÉ */
+
+footer {
+    background-color: #142b52;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+}
+
+/* ADAPTAÇÃO PARA CELULARES */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 40px 15px;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 22px;
+    }
+
+    section h2 {
+        font-size: 22px;
+    }
+
+    .boas-vindas h2 {
+        font-size: 27px;
+    }
+
+}
+
+/* BOTÃO DE PROGRAMAÇÃO */
+
+.botao {
+    display: inline-block;
+    background-color: #173b70;
+    color: white;
+    padding: 13px 25px;
+    margin-top: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #d69b35;
+    transform: translateY(-2px);
+}
+
+/* BOTÃO VOLTAR AO TOPO */
+
+.voltar-topo {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    color: #173b70;
+    text-decoration: none;
+    font-weight: bold;
+}
